@@ -27,9 +27,11 @@ public class FunkyMonkeyController {
     }
     public String gandalfTheGrey() {
         int counter = 1;
-        while(counter <= 3) {
-            return "You can pass";
+        while (counter <= 3) {
+            ++counter;
+            System.out.println("you can pass");
         }
+        System.out.println("YOU SHALL NOT PASS!");
         return "YOU SHALL NOT PASS!";
     }
 
