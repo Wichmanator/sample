@@ -24,7 +24,7 @@ class FunkyMonkeyControllerSpec extends Specification {
         'Count is greater than 9' == returnValue
     }
     /*def "Gandalf only lets three hobbits pass the bridge"() {
-        given:
+        given:g
             def theGrey = new FunkyMonkeyController()
             String doTheyPass =
     }*/
