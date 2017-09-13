@@ -21,7 +21,7 @@ class FunkyMonkeyControllerSpec extends Specification {
             def countDooku = new FunkyMonkeyController()
             String returnValue = countDooku.counter()
         expect:
-        'Count is greater than 10' == returnValue
+        'Count is greater than 9' == returnValue
     }
     /*def "Gandalf only lets three hobbits pass the bridge"() {
         given:
