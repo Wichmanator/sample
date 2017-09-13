@@ -23,9 +23,11 @@ class FunkyMonkeyControllerSpec extends Specification {
         expect:
         'Count is greater than 10' == returnValue
     }
-    /*def "Gandalf only lets three hobbits pass the bridge"() {
-        given:g
-            def theGrey = new FunkyMonkeyController()
-            String doTheyPass =
-    }*/
+    def "Gandalf only lets three hobbits pass the bridge"() {
+        given:
+            def passer = new FunkyMonkeyController()
+            String TheyDoNotPass = passer.gandalfTheGrey()
+        expect:
+        'YOU SHALL NOT PASS!' == TheyDoNotPass
+    }
 }

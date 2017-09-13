@@ -25,8 +25,12 @@ public class FunkyMonkeyController {
             return "Count is not";
         }
     }
-    public void gandalfTheGrey() {
-
+    public String gandalfTheGrey() {
+        int counter = 1;
+        while(counter <= 3) {
+            return "You can pass";
+        }
+        return "YOU SHALL NOT PASS!";
     }
 
 }
