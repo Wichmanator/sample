@@ -30,4 +30,11 @@ class FunkyMonkeyControllerSpec extends Specification {
         expect:
         'YOU SHALL NOT PASS!' == TheyDoNotPass
     }
+    def "Two-Face decides your fate"() {
+        given:
+            def coin = new FunkyMonkeyController()
+            String decision = coin.twoFaceDecidesYourFate()
+        expect:
+            decision == 'life' || 'death'
+    }
 }
