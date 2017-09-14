@@ -10,10 +10,10 @@ public class FunkyMonkeyController {
         return "Hello, Funky Code Monkey";
     }
     public int justSomeBoringMath() {
-        int x = 0, y = 5;
+
         int total = 0;
-        if (x <= 3) {
-            total = ++x - y;
+        for (int number = 2; number <= 8; total += number, number +=2) {
+
         }
         return total;
     }
@@ -26,13 +26,17 @@ public class FunkyMonkeyController {
         }
     }
     public String gandalfTheGrey() {
-        int counter = 1;
-        while (counter <= 3) {
-            ++counter;
+        for (int counter = 1; counter <= 3; counter++) {
             System.out.println("you can pass");
         }
         System.out.println("YOU SHALL NOT PASS!");
         return "YOU SHALL NOT PASS!";
     }
-
+        /*int counter = 1;
+        while (counter++ <= 3) {
+            System.out.println("you can pass");
+            System.out.println("YOU SHALL NOT PASS!");
+            return "YOU SHALL NOT PASS!";
+        }
+    }*/
 }

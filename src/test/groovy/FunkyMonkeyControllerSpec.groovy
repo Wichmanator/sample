@@ -14,7 +14,7 @@ class FunkyMonkeyControllerSpec extends Specification {
             def math = new FunkyMonkeyController()
             int answer =  math.justSomeBoringMath()
         expect:
-        -4 == answer
+        20 == answer
     }
     def "count is greater than 10"() {
         given:
