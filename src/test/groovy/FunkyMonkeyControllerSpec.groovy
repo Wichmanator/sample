@@ -37,4 +37,11 @@ class FunkyMonkeyControllerSpec extends Specification {
         expect:
             decision == 'life' || 'death'
     }
+    def "Rolls for a random country"(){
+        given:
+            def dice = new FunkyMonkeyController()
+            String country = dice.whichCountryToGo()
+        expect:
+            country == country
+    }
 }

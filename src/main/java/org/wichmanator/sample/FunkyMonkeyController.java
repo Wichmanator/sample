@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.SecureRandom;
+import java.util.Random;
 
 @RestController
 public class FunkyMonkeyController {
@@ -38,6 +39,14 @@ public class FunkyMonkeyController {
             System.out.println("You get to live yet another day.");
         }
         return decision;
+    }
+    public String whichCountryToGo() {
+        Countries clist = new Countries();
+        String[] country = clist.getCountries();
+        Random random = new Random();
+        int index = random.nextInt(country.length);
+        System.out.println(country[index]);
+        return country[index];
     }
     public String gandalfTheGrey() {
         int counter = 1;
